@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--{% load static %}-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<main class="main">
+    <div class="title">
+        <h1>Приложение моделирующие работу библиотеки</h1>
+    </div>
+    <hr>
+    <div class="list">
+    {% block content %}
+    {% endblock %}
+    </div>
+</main>
+<footer>
+    {% block form %}
+    {% endblock %}
+</footer>
+</body>
+</html>
+
+

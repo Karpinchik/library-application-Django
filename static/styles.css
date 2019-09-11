@@ -1,0 +1,23 @@
+.title {
+    padding: 10px;
+    width: 100%;
+    background: #39b54a;
+}
+
+
+.list {
+
+    background: #ccc;
+    width: 100%;
+    padding: 40px;
+
+}
+
+
+footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 10px;
+    background: #39b54a;
+    width: 100%;
+}

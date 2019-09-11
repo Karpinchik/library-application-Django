@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Редактирование информации:</h2>
+    <p>Название книги изменено на "{{ book.title }}"</p>
+{% endblock %}
+
+
+{% block form %}
+    <footer class="footer">
+        <form method="POST" action="">{% csrf_token %}
+        <h3>Введите новое название книги:</h3>
+            {{ form.as_p }}
+        <input type="submit" name="Отправить">
+        </form>
+    </footer>
+{% endblock %}
+
+
+
+

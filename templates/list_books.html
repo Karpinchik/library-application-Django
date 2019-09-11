@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <h2>Список книг:</h2>
+      {% for i in items %}
+         <ul>
+            <li>
+                <a href=" {% url 'redaction_book' %}?per={{ i.pk }} "> {{ i }} </a>
+            </li>
+         </ul>
+    {%endfor%}
+{% endblock %}
+
+{% block form %}
+    <h3>Введите новую книгу:</h3>
+    <form method="POST" action="">{% csrf_token %}
+        {{ form.as_p }}
+    <input type="submit" name="Отправить">
+    </form>
+{% endblock %}
+
+
