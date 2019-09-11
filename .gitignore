@@ -3,6 +3,7 @@
 *.pot
 *.py[co]
 .idea/
+
 .tox/
 __pycache__
 
